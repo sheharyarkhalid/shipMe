@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/account.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+
+<header>
+    <div class="container">
+       <div class="nav_bar">
+         <div class="nav_component">
+            <div class="left_nav"> 
+             <div class="logo">
+                 <a href="#"><img src="image/home_logo.png"></a>
+             </div>
+             <div class="nav_list">
+               <ul id="change_nav_active">
+                 <li class="change_active active"><a href="#">Shipment</a></li>
+                 <li class="change_active "><a href="#">Orders</a></li>
+               </ul>
+             </div>
+             </div>
+         </div>
+         <div class="nav_component">
+           <div class="right_nav">
+            <div class="bell_icon"><i class="fas fa-bell"></i></div>
+             <div class="profile_btn">
+              <i class="fas fa-chevron-down"></i>
+               <img src="image/profile.png">
+              
+             </div>
+             <div class="profile_data">
+               <div class="main">
+                 <div class="data">
+                   <div class="figure">
+                     <figure><img src="image/profile.png"><figcaption><h4>Peter Burn</h4><small>World Wild Technologies</small></figcaption></figure>
+                   </div>
+                   <div class="links"><a href="#">Profile</a></div>
+                   <div class="links"><a href="#">Company</a></div>
+                   <div class="links"><a href="#">Account</a></div>
+                   <div class="links companies_style"><a href="#">Companies</a></div>
+                   <div class="links"><a href="#">Logout</a></div>
+                 </div>
+                 </div>
+            </div>
+           </div>
+         </div>
+       </div>
+        
+    </div>
+</header>
+
+<section class="navigation_section">
+    <div class="container">
+        <div class="navigation">
+            <ul id="navigation_active">
+                <li class="change_nav_active navigation_active" onclick="profile_section()"><a  href="#" >Profile</a></li>
+                <li class="change_nav_active " onclick="company_section()"><a href="#" >Company</a></li>
+                <li class="change_nav_active " onclick="user_account_section()"><a href="#" >Account</a></li>
+                <li class="change_nav_active " onclick="account_managment_section()"><a href="#" >Companies</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="profile_section" id="profile_section">
+    <div class="custom_container">
+        <div class="profile_section_data">
+            <h2>Profile</h2>
+            <form>
+                <div class="profile_form">
+                  <div class="profile_section_one">
+                    
+                    <figure>
+                      <img src="image/img_avatar.png">
+                      <div class="change_pic">
+                       <label> change 
+                     <input type="file" placeholder="change">
+                        </label>
+                      </div> 
+                    </figure>
+
+                    <div class="profie_name_section">
+                      <div class="profile_name">
+                        <label>First Name</label>
+                        <input type="text" value="Peter" placeholder="">
+                      </div>
+                      <div class="profile_name">
+                        <label>Last Name</label>
+                        <input type="text" value="Burn" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name border_bottom">
+                      <label>Job title</label>
+                      <input type="text" value="Logistings manager" placeholder="">
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name">
+                      <label>Primary phone number</label>
+                      <div class="profile_phone">
+                      <select>
+                        <option>+1</option>
+                        <option>+92</option>
+                      </select>
+                      <input type="text" value="555 333 222" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name">
+                      <label>Secondary phone number</label>
+                      <div class="profile_phone">
+                      <select>
+                        <option>+1</option>
+                        <option>+92</option>
+                      </select>
+                      <input type="text" value="555 333 222" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name">
+                      <label>Primary email</label>
+                      <input type="email" value="peter@mail.com" placeholder="">
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name border_bottom">
+                      <label>Secondary email</label>
+                      <input type="text" value="burn@mail.com" placeholder="">
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name">
+                      <label>Old password</label>
+                      <input type="email" value="************" placeholder="">
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name">
+                      <label>New password</label>
+                      <input type="text" value="************" placeholder="">
+                    </div>
+                  </div>
+                  <div class="profile_section_two">
+                    <div class="profile_name border_bottom">
+                      <label>Confirm password</label>
+                      <input type="text" value="************" placeholder="">
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="profile_save_btn">
+                  <button>Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="company_section" id="company_section">
+  <div class="custom_container">
+      <div class="company_section_data">
+          <h2>Company Info</h2>
+          <form>
+              <div class="company_form">
+                <div class="company_section_one">
+                  
+                  <figure>
+                    <img src="image/img_avatar.png">
+                  <div class="change_company_pic"><label>change<input type="file"></label></div>
+                  </figure>
+
+                  <div class="company_name_section">
+                    <div class="company_name">
+                      <label>Company name</label>
+                      <input type="text" value="World Wide Technology" placeholder="">
+                    </div>
+                    <div class="company_name">
+                      <label>Company Address</label>
+                      <input type="text" value="1911 Adie Road" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <div class="company_section_two">
+                  <div class="company_name company_location">
+                    <div class="city">  
+                    <label>city</label>
+                    <input type="text" value="St. Louis" placeholder="">
+                     </div>
+                     <div class="state">  
+                      <label>State</label>
+                      <select>
+                          <option>Missouri </option>
+                      </select>
+                       </div>
+                       <div class="zipcode">  
+                          <label>Zip code</label>
+                          <input type="number" value="63043" placeholder="">
+                           </div>
+                  </div>
+                </div>
+                <div class="company_section_two">
+                  <div class="company_name">
+                    <label>Company phone</label>
+                    <div class="company_phone">
+                    <select>
+                      <option>+1</option>
+                      <option>+92</option>
+                    </select>
+                    <input type="text" value="555 333 222" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="company_section_two">
+                  <div class="company_name">
+                    <label>Company email</label>
+                    <input type="email" value="contact@wwt.com" placeholder="">
+                  </div>
+                </div>
+                <div class="company_section_two">
+                  <div class="company_name company_border_bottom">
+                    <label>Company website</label>
+                    <input type="text" value="contact@wwt.com" placeholder="">
+                  </div>
+                </div>
+                <div class="company_section_two">
+                  <div class="company_name">
+                    <label>Primary contact name</label>
+                    <input type="text" value="Lewis Fleming" placeholder="">
+                  </div>
+                </div>
+                  <div class="company_section_two">
+                  <div class="company_name">
+                    <label>Primary contact phone</label>
+                    <div class="company_phone">
+                    <select>
+                      <option>+1</option>
+                      <option>+92</option>
+                    </select>
+                    <input type="text" value="555 333 222" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <div class="company_section_two">
+                  <div class="company_name border_bottom">
+                    <label>Primary contact job title</label>
+                    <input type="text" value="Manager" placeholder="">
+                  </div>
+                </div>
+               
+              </div>
+              <div class="company_save_btn">
+                <button>Save</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+<section class="user_account_section" id="user_account_section">
+  <div class="container">
+      <div class="user_account">
+          <div class="keep_empty"></div>
+          <div class="user_account_detail">
+               <h4>Users</h4>
+               <div class="user_account_detail_nav">
+                   <div class="search_bar">
+                       <form>
+                           <input type="search" placeholder="search">
+                           <i class="fas fa-search"></i>
+                       </form>
+                   </div>
+                   <div class="add_user_btn">
+                       <a href="new_user.html">Add new user</a>
+                   </div>
+               </div>
+              <div class="user_account_list">
+                  <div class="single_user_account">
+                      <div class="single_detail">
+                          
+                          <figure><img src="image/img_avatar.png"></figure>
+                          <div class="specific_dtl">
+                          <h5>peter burn</h5>
+                          <span>aaron@wwt.com</span>
+                          <small>Logistings manager</small>
+                          </div>
+                         
+                      </div>
+
+                      <div class="operation">
+                          <i class="fas fa-ellipsis-h"></i>
+                          <div class="do_operation">
+                              <a href="#">Edit user</a>
+                              <a href="#">Edit Delete</a>
+                             </div> 
+                      </div>
+                  </div>
+
+
+                  
+              </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="account_managment_section" id="account_managment_section">
+  <div class="container">
+         <div class="account_managment_nav">
+             <form>
+                 <div class="search_bar">
+                 <input type="search" placeholder="Search">
+                 <i class="fas fa-search"></i>
+                 </div>
+             </form>
+             <a href="new_company.html">Add new company</a>
+          </div>
+          <div class="account_managment"> 
+              <table>
+                
+                  <tr class="border_bottom">
+                      <th>ID</th>
+                      <th>Company name</th>
+                      <th>Phone</th>
+                      <th>Webite</th>
+                      <th>Address</th>
+                      <th>Number of devices</th>
+                      <th>Primary contact</th>
+                      <th>Contact Phone</th>
+                      <th>Actions</th>
+                  </tr>
+                 
+                  <tr>
+                      <td>4544</td>
+                      <td><figure><img src="image/img_avatar.png"><span>World Wide Technology</span></figure></td>
+                      <td>+1 988 932 324</td>
+                      <td>https://wwt.com</td>
+                      <td>1911 Adie Road, St. Louis, Missouri</td>
+                      <td>3</td>
+                      <td>Lewis Fleming</td>
+                      <td>+1 252 5343 2323</td>
+                      <td>
+                             <div class="action">
+                              <i class="fas fa-ellipsis-h action_btn"></i>
+                                <div class="do_action">
+                                  <a href="#">Edit company</a>
+                                  <a href="#">Edit Account</a>
+                                  <a href="#">Delete</a>
+                                 </div> 
+                              </div>
+                         
+                             
+                      </td>
+                  </tr>
+
+                  <tr>
+                    <td>4544</td>
+                    <td><figure><img src="image/img_avatar.png"><span>World Wide Technology</span></figure></td>
+                    <td>+1 988 932 324</td>
+                    <td>https://wwt.com</td>
+                    <td>1911 Adie Road, St. Louis, Missouri</td>
+                    <td>3</td>
+                    <td>Lewis Fleming</td>
+                    <td>+1 252 5343 2323</td>
+                    <td>
+                           <div class="action">
+                            <i class="fas fa-ellipsis-h action_btn"></i>
+                              <div class="do_action">
+                                <a href="#">Edit company</a>
+                                <a href="#">Edit Account</a>
+                                <a href="#">Delete</a>
+                               </div> 
+                            </div>
+                       
+                           
+                    </td>
+                </tr>
+                  
+              </table>   
+           </div>
+  </div>
+</section>
+
+<script src="script/Mainpage_script.js"></script>
+</body>
+</html>
